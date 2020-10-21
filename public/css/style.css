@@ -1,0 +1,93 @@
+body { padding-top: 0.5px; }
+.ball{
+    float:left;
+    width:35px;
+    height:18px;
+    line-height:18px;
+    border:1px solid #DDD;
+    margin:0 3px 3px 0;
+    text-align:center;
+    padding: 0.2em 0.5em ;
+    background-color: burlywood;
+
+}
+.final{
+    float:right;
+    width:35px;
+    height:18px;
+    line-height:18px;
+    border:1px solid #DDD;
+    margin:0 5px 3px 0;
+    text-align:center;
+    padding: 0.2em 0.2em ;
+    background-color: cornflowerblue;
+}
+.final1{
+    float:right;
+    width:35px;
+    height:18px;
+    line-height:18px;
+    border:1px solid #DDD;
+    margin:0 5px 3px 0;
+    text-align:center;
+    padding: 0.2em 0.2em ;
+    background-color: wheat;
+}
+
+.title{
+    float:right;
+    width:75px;
+    height:20px;
+    line-height:18px;
+    border:1px solid #DDD;
+    margin:0 5px 3px 0;
+    text-align:center;
+    padding: 0.2em 0.2em ;
+    background-color: cornflowerblue;
+}
+.content{
+    float:right;
+    width:75px;
+    height:20px;
+    line-height:18px;
+    border:1px solid wheat;
+    margin:0 5px 3px 0;
+    text-align:center;
+    padding: 0.2em 0.2em ;
+    background-color: white;
+}
+
+div.row{
+    margin-top:3px;
+
+}
+
+#WRAPPER {
+    width: 95%;
+    margin:0 auto;
+    padding:0 10px;
+    font-family: 'Arial', 'Microsoft JhengHei', 'Verdana', 'Segoe UI','PMingLiu', 'sans-serif';
+}
+.m_table{
+    width: 100%;
+    margin:0 auto;
+    padding:0 10px;
+}
+.m_table td{
+    text-align: center;
+}
+.m_table th{
+    text-align: center;
+}
+.table-result{
+    margin-left: auto;
+    margin-right: auto;
+}
+.table-result td {
+    text-align: center;
+    vertical-align: middle;
+    width: 35px;
+    height: 50px;
+    border: 1px solid #C4C4C4;
+}
+
