@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TicketController@run');
+Route::get('/ticket', 'TicketController@run');
+Route::get('/ticket/add', 'TicketController@add');
+Route::get('/ticket/delete', 'TicketController@delete');
