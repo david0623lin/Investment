@@ -46,6 +46,7 @@ class TicketController extends Controller
             $ticket_all[$id]['min'] = sprintf('%.2f', min($ticket_info['data']['h'])); #當日最低
             $ticket_all[$id]['count'] = (string) array_sum($ticket_info['data']['v']); #當日成交張數
             $ticket_all[$id]['favorite'] = $favorite;
+            $ticket_all[$id]['monitor_url'] = "/monitor?ticket_id=". $id;
         }
 
         $view_datas['ticket_id'] = $ticket_id;

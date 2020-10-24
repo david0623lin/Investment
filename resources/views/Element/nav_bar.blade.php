@@ -11,6 +11,12 @@
 					<li><a class="dropdown-item" href="{{action('TicketController@run')}}">觀察列表</a></li>
 				</ul>
 			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">監控管理 </a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a class="dropdown-item" href="{{action('MonitorController@run')}}">設定監控</a></li>
+				</ul>
+			</li>
 		</ul>
 	</div> <!-- navbar-collapse.// -->
 </nav>
