@@ -36,7 +36,7 @@ class Ticket extends Model
 
     public static function getTicketListInfo()
     {
-        $info = self::orderby('ticket_id', 'ASC')->get()->toArray();
+        $info = self::orderby('create_at', 'ASC')->get()->toArray();
         
         $ret = ($info != array()) ? $info : array();
 

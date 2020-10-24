@@ -58,6 +58,10 @@
             }
         });
     });
+    function add() {
+            document.form.action = "/addreservation?mem_id=&date=";
+            document.form.submit();
+        }
     function reloadPage(){
         location.reload()
     }
@@ -139,14 +143,14 @@
                         <td align="center">{{ $ret['max'] }}</td>
                         <td align="center">{{ $ret['min'] }}</td>
                         <td align="center">{{ $ret['count'] }}</td>
-                        <td>
+                        <td align="center">
                             <div class="col-1.5">
                                 @if (!$ret['favorite'])
-                                    <button type="button" name="addTrcket{{$key}}" info="{{$ticket_id}}/{{$ret['name']}}" class="btn btn-success">新增</button>
+                                    <button type="button" name="addTrcket" info="{{$ticket_id}}/{{$ret['name']}}" class="btn btn-success">新增</button>
                                 @else
-                                    <button type="submit" class="btn btn-warning" onclick="add()">監控</button>
+                                    <button type ="submit" class="btn btn-warning" onclick="javascript:location.href='{{ $ret['monitor_url'] }}'">監控</button>
                                     <button type="submit" class="btn btn-info" onclick="add()">庫存</button>
-                                    <button type="button" name="deleteTrcket{{$key}}" info="{{$ticket_id}}/{{$ret['name']}}" class="btn btn-danger">移除</button>
+                                    <button type="button" name="deleteTrcket" info="{{$ret['ticket_id']}}/{{$ret['name']}}" class="btn btn-danger">移除</button>
                                 @endif
                             </div>
                         </td>
