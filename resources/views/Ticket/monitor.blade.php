@@ -69,7 +69,7 @@
     <h3 class="pb-2 mb-3 font-italic border-bottom"></h3>
     <h4>監控列表</h4>
     <div class="table-responsive">
-        <table class="table table-sm table-hover" style="width: 60%; border:3px #cccccc solid;" cellpadding="10" border='1'>
+        <table bgcolor="#F0F0F0" class="table table-sm table-hover" style="width: 60%; border:3px #cccccc solid;" cellpadding="10" border='1'>
             <thead class="table thead-dark">
                 <tr>
                     <th>編號</th>
@@ -83,8 +83,8 @@
             <tbody>
                 @foreach ($rets as $key => $ret)
                     <tr>
-                        <td align="center"><b>{{ $ret['ticket_id'] }}</b></td>
-                        <td align="center">{{ $ret['name'] }}</td>
+                        <td align="center"><font color="#00529B"><b>{{ $ret['ticket_id'] }}</b></font></td>
+                        <td align="center"><font color="#00529B">{{ $ret['name'] }}</font></td>
                         <td align="center">{{ $ret['price'] }}</td>
                         <td align="center">{{ $ret['type'] }}</td>
                         @if ($ret['status'] == 'true')

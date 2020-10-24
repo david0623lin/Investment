@@ -96,7 +96,7 @@
         <h4>查詢結果</h4>
     @endif
     <div class="table-responsive">
-        <table class="table table-sm table-hover" style="border:3px #cccccc solid;" cellpadding="10" border='1'>
+        <table bgcolor="#F0F0F0" class="table table-sm table-hover" style="border:3px #cccccc solid;" cellpadding="10" border='1'>
             <thead class="table thead-dark">
                 <tr>
                     <th>編號</th>
@@ -115,8 +115,8 @@
             <tbody>
                 @foreach ($rets as $key => $ret)
                     <tr>
-                        <td align="center"><b>{{ $ret['ticket_id'] }}</b></td>
-                        <td align="center">{{ $ret['name'] }}</td>
+                        <td align="center"><font color="#00529B"><b>{{ $ret['ticket_id'] }}</b></font></td>
+                        <td align="center"><font color="#00529B">{{ $ret['name'] }}</font></td>
                         @if ($ret['price'] > $ret['lastclose'])
                             <td align="center"><font color="red">↟ {{ $ret['price'] }}</font></td>
                         @elseif ($ret['price'] < $ret['lastclose'])
