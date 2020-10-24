@@ -18,3 +18,6 @@ Route::get('/ticket/delete', 'TicketController@delete');
 
 Route::get('/monitor', 'MonitorController@run');
 Route::get('/monitor/delete', 'MonitorController@delete');
+
+Route::get('/hot/updown', 'HotController@getUpDown');
+
