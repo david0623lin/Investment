@@ -15,6 +15,7 @@
 				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">股票管理 </a>
 				<ul class="dropdown-menu" role="menu">
 					<li><a class="dropdown-item" href="{{action('TicketController@run')}}">觀察列表</a></li>
+					<li><a class="dropdown-item" href="{{action('SearchController@run')}}">股票查詢</a></li>
 				</ul>
 			</li>
 			<li class="nav-item dropdown">
