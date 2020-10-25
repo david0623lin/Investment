@@ -64,6 +64,10 @@
                 <label for="NewReservation""> </label><br>
                 <button type="submit" class="btn btn-primary btn-block">新增</button>
             </div>
+            <div class="col-1.5 pl-2 mb-3 pt-2">
+                <label for="back"> </label><br>
+                <input type ="button" class="btn btn-primary btn-block" onclick="history.back()" value="返回"></input>
+            </div>
         </div>
     </form>
     <h3 class="pb-2 mb-3 font-italic border-bottom"></h3>

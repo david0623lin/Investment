@@ -13,8 +13,10 @@
 
 Route::get('/', 'TicketController@run');
 Route::get('/ticket', 'TicketController@run');
-Route::get('/ticket/add', 'TicketController@add');
 Route::get('/ticket/delete', 'TicketController@delete');
+
+Route::get('/ticket/search', 'SearchController@run');
+Route::get('/ticket/search/add', 'SearchController@add');
 
 Route::get('/monitor', 'MonitorController@run');
 Route::get('/monitor/delete', 'MonitorController@delete');
